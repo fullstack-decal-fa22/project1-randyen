@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <!-- *Metadeta -->
+    <head>
+        <title>randynguyen's website!</title>
+        <!-- Support all languages -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Randy Nguyen" />
+        <meta 
+            name="description"
+            content="My first ever personal website. Showcases a bit on who
+            I am and some of my accomplishments at UC Berkeley! Nice to meet you." />
+        <!-- Icon on the webpage -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- Sets the viewport to accomodate different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Link all stylesheets: styles.css -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Load javascript file: input.js -->
+        <script src="input.js"></script>
+    </head>
+
+    <body>
+        <!-- Menu Bar -->
+        <nav>
+            <div class="logo">
+                <h2><a target="_blank" href="#home">Home</a></h2>
+            </div>
+            <ul class="nav-bar">
+              <li><a target="_blank" href="#about">About Me</a></li>
+              <li><a target="_blank" href="#gallery">Gallery</a></li>
+              <li><a target="_blank" class="style-button" href="#contact">
+                    <button>Contact</button></a></li>
+            </ul>
+        </nav>
+        
+        <!-- Horizontal section color blocks 
+                Home Section -->
+        <section id="home">
+            <form onsubmit=check() id="form" class="questionnaire">
+                <label for="submission">Guess my halloween costume!</label>
+                <input id="submission" name="submission" type="text" required/>
+                <input type="submit" />
+                <br>
+                <h5>hint 1: Initials: K.S., love & war. Format: K... S...</h5>
+                <h6><a target="_blank" 
+                href="https://www.google.com/search?q=shinomiya+kaguya&oq=shinomiya&aqs=chrome.0.0i433i512j69i57j0i512l7j46i512.3357j0j1&sourceid=chrome&ie=UTF-8">
+                    hint 2: Click for answer</a></h6>
+                <br>
+            </form>
+            
+        </section>
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="bio">
+                <h2>About Me</h2>
+                <br>
+                <p> Hello there! I'm Randy, a third-year studying at the 
+                    University of California, Berkeley. 
+                <br>
+                <br>
+                    I have a major focus in Computer Science and am currently exploring 
+                    various career paths. So far, I'm really interested in 
+                    fullstack development & vg design!
+                <br>
+                <br>
+                    In my free time, I enjoy cosplaying, making vlogs, and 
+                    spending time with friends. Also trying to get better at cooking and crocheting...- 
+                    anyways, pleased to meet you!
+                <br>
+                <br>
+                </p>
+            </div>
+            <img class=self-portrait src="portrait.jpg" alt="me with cats" />
+        </section>
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="projects">
+                <div class="proj-items">
+                    <img class="proj-pic" src="cscats.png" alt="cscats" />
+                    <br>
+                    <p>CS 61A Autocorrect Typing Software (CATS)</p>
+                </div>
+                <div class="proj-items">
+                    <img class="proj-pic" src="pytris.png" alt="pytris" />
+                    <br>
+                    <p>Tetris in Python (Pytris)</p>
+                </div>
+                <div class="proj-items">
+                    <img class="proj-pic" src="snake.png" alt="gi@cal" />
+                    <br>
+                    <p>Snake in C!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="medias">
+                <h3>Contact me!</h3>
+                <br>
+                <h4>Email: randyn@berkeley.edu</h4>
+            </div>
+        </section>
+    </body>
+</html>

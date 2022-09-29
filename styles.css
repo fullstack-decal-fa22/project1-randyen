@@ -1,0 +1,168 @@
+/* Initialization of stylesheet (font, box-sizing, spacing) */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style for the navigation/menu bar (logo & links) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+    background-color:rgb(221, 221, 217);
+    padding-top: 1rem;
+}
+
+.logo {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    padding: 1em;
+    margin: 1em;
+}
+
+a:hover {
+    color:cadetblue;
+    transition: color .3s ease-out;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color:cadetblue;
+    transition: color .3s ease-out;
+    cursor: pointer;
+}
+
+button {
+    padding: 7px 20px;
+    margin-bottom: 1rem;
+    border-radius: 40px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #3e9ec4;
+    color: white;
+}
+
+/* Different sections for the one-page layout */
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Home Page section styling */
+#home {
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(110, 92, 108);
+}
+
+.questionnaire {
+    display:flex;
+    flex-direction:column;
+    padding: 5rem;
+    align-items: center;
+}
+
+/* About Me section styling */
+#about {
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(221, 221, 217);
+}
+
+.bio {
+    padding: 5em 10em 10em 10em;
+    letter-spacing: .3px;    
+}
+
+.self-portrait {
+    max-width: 45%;
+    max-height: 45%;
+    margin: 10em 10em 0 0em;
+}
+
+/* Gallery section styling */
+#gallery {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(38, 34, 34);
+}
+
+#gallery h1 {
+    margin-top: 3em;
+    margin-left: 29em;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5%;
+    padding: 5em;
+}
+
+.proj-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.proj-pic {
+    width: 80%;
+    height: 80%;
+}
+
+/* Contact section styling */
+#contact {
+    height: 15vh;
+    background-color: lightblue;
+    display:block;
+}
+
+.medias {
+    display: inline-block;
+    padding: 15px 0 0 10px;
+    color: #fff;
+}
+
